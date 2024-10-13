@@ -39,6 +39,65 @@
 
 * The problems that REST solves
 -------------------------------
+	. ROY FIELDING CREATED REST AND HTTP
+
+	. THE DESIGN OF REST INFLUENCES THE ARCHITECTURE OF THE WEB
+
+		. The focus on state transfer has enabled the development of web applications in multiple parts
+		
+			. Front-End
+
+			. Back-End
+
+	. WHEN USING REST, DATA CAN BE ANYTHING
+
+		. This allowed to switch from XML to JSON
+
+
+	. HATEOAS (HYPERTEXT AS THE ENGINE OF APPLICATION STATE)
+
+		. IN A REST API, A REPRESENTATION INCLUDES INFORMATION ABOUT THE STATE OF AN OBJECT. IN FACT, THE ENTIRE REQUEST IS SUMMARIZED IN THAT STATE DESCRIPTION AND REST REPRESEN
+		TATIONS CAN ALSO INCLUDE LINKS THAT LEAD TO OTHER POTENTIAL NEXT APPLICATION STATES.
+
+		. ALTHOUGH THESE LINKS ARE FORMATTED FOR PROGRAMMATIC USE, RATHER THAN FOR USER INTERACTION, THEY'RE STILL A FORM OF HYPERTEXT, AND THE APPLICATION CAN THEN USE THIS 
+		HYPERTEXT THAT'S INCLUDED AS PART OF THE REPRESENTATION, TO MOVE TO A NEW APPLICATION STATE.
+
+		. AS REST WAS ORIGINALLY DESCRIBED, THE IDEA OF HYPERTEXT AS THE ENGINE OF APPLICATION STATE IS A CORE COMPONENT OF WHAT MAKES REST API, RESTFUL.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+* REST constraints
+------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
