@@ -108,6 +108,47 @@ The REST architecture is defined by six constraints:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* How REST has evolved
+----------------------
+
+REST has served as a significant model for API development on the web. But over time rest implementations have evolved. 
+
+Some of these changes were enabled by the flexible nature of REST, while others represent evolutions beyond the basics of the REST architecture. 
+
+When REST was first implemented, XML was by far the most common format used for data transmitted over the web. Even so, REST was built to work with any data format that a representation might contain. 
+
+Over time, the JSON format has overtaken XML to become the dominant format for data on the web. Because of the foresight that went into making REST flexible in this regard, the REST architecture has remained just as relevant for web data today as it was when it was first described. 
+
+Another area in which REST was created to be flexible was in the way it handled the ability to download additional application logic. 
+
+When REST was created, the web was mostly just HTML and CSS. But the REST specification allows for responses to incorporate additional code on demand. 
+
+Because REST took a flexible approach in this area from the start, the REST architecture was able to adapt as JavaScript code became the dominant form of logic executed within browsers. 
+
+Today, it's common to think of web applications as combining HTML, CSS and JavaScript almost by definition. 
+
+When REST was created, it was not clear that the web would evolve in this direction. 
+
+But once again, the fact that REST didn't insist on a certain format or specification for code on demand has ensured its continued relevance. 
+
+But REST implementations have also emerged that use some of the components of the architecture, but not all of them. 
+
+Perhaps the most noteworthy are REST APIs that do not use hypertext as the engine of application state. These APIs are often tightly bound to the structure of HTTP just like traditional REST. And rely on the same separation between the client and server components of the application. But instead of including hypertext within representations, they may instead require hard coded information within the client code to understand what next states are available for a resource as well as how to make requests to those states. 
+
+As originally envisioned by Roy Fielding, a REST representation contains all the state information necessary for an application without needing additional resources. One advantage to this structure is that the API location or structure can change without also needing to make changes to code to accommodate it, because the code will always look to the representation to understand what's possible and how to take the next step in changing state. 
+
+Fielding has said that fully implementing REST may be less efficient in the short term, but that the trade-off for that short term pain is software longevity. 
+
+But some API builders don't find this flexibility compelling or necessary and may instead choose to simplify their implementations by emitting the hateoas aspect. 
+
+Fielding himself has encouraged API builders not to stick to aspects of REST that don't make sense for their systems. 
+
+However, he suggests that the resulting work should not be labeled a REST API. 
+
+While there may be a healthy back and forth on what to call these implementations such APIs are clearly heavily influenced by the REST architecture, and that common foundation often means that developers working with those APIs are able to do so easily because of the many commonalities.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
