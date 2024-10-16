@@ -69,10 +69,74 @@
 
 * REST constraints
 ------------------
+The REST architecture is defined by six constraints:
+
+	THE FIRST TWO CONSTRAINTS, CLIENT SERVER ARCHITECTURE AND STATELESSNESS WERE CONSTRAINTS OF THE EARLY ARCHITECTURE OF THE WEB
+
+	. Is a client-server architecture - (this brigns separation of concerns to REST between the frontend and the backend).
+
+	. Statelessness - (The session state is kept entirely on the client. This makes the full nature of each request apparent in the requested itself, makes recovery from partial 		failures easier, and helps scalability by not requiring server resources for storing state.
+
+		In web applications, this constraint means that what a user sees in a browser window while interacting with an application, represents the current state of the app. The
+		client can then use REST to make requests to the server to create or change resources in response to this new state.
+
+		
+	. Caching - By labeling data within a response as cachable or non-cachable this constrain improves network efficiency, as well as the user's perception of the application
+	performance.
+
+		In web applications is common for media like images to be cached the first time a client accesses the app.
+
+	
+	. Uniform interface - This can be the central feature that distinguishes REST. A REST application implements a general process, rather than only coding access to a specific 
+	set of resources.
+
+		You can architect an application to work with one REST API and uses the same application to interact with any other API that implements REST.
+
+	
+	. System or hierarchical layers within the architecture - A component interacts only with a given REST layer. The REST model does not provide visibility into the component outside
+	of that layer.
+
+		Advantages:
+			Limiting complexity, promoting the independence of each layer, enabling the integration of legacy services, and allowing for redundancy.
+
+
+	. The final constraint is optional - Code on demand - This enables an implementation to extend the functionality of a client using scripts or other code that the user interface
+	can execute.
+
+		This constraint simplifies clients, because it reduces the number of features that the developer has to implement, in advance and makes the system extensible.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
 
 
 
