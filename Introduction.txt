@@ -216,6 +216,56 @@ A few others are particularly common, though.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Best practices for building a RESTful API
+-------------------------------------------
+So you need to build an API. And you've decided that REST is the appropriate architecture for your needs. 
+
+When you're building using the REST architecture, there are a number of best practices that can help you build an interface that's both understandable and easily maintainable. 
+
+	* First, working with HTTP as it's already defined, saves you work and helps other developers understand your interface more readily. 
+
+		. HTTP defines more verbs than just get and post and your API should use each of them appropriately. At a minimum, implementing put and delete if relevant. 
+
+		. HTTP also defines response codes for a range of outcomes. For efficient error handling, responses should include HTTP codes along with descriptive metadata. 
+
+
+	* Another best practice is to version your API from the start and include that version number in URLs, ideally at the base of the URL. 
+
+		. This enables you to iterate on your API without breaking existing requests. For instance, you can create a Version 2 while still supporting requests to the Version 1 API. 
+
+	* URL structure is another important aspect to keep in mind as you build your API. REST URLs generally include a resource name followed by a resource identifier. 
+
+		. For instance, the URL to check the availability of a specific campsite at a national park might use campsite as the resource name followed by a unique identifier for the 		specific resource which is often a universal unique identifier or UUID. 
+
+
+	* When you name resources, use names that make sense. 
+
+		. This makes your API documentation easier to understand and makes the requests easier for implementers to create. 
+
+		. It's common to standardize on a specific format for identifying resources within a URL. 
+
+		. It's common to use a singular noun to access a single resource and a plural noun for multiple resources. 
+
+
+	* It's also important to put some thought into the data you provide in your responses. 
+
+		. Offering users a choice of either JSON or XML gives your users flexibility and widens the applicability of your API. 
+
+		. Within your response data, include links to other potential next states. 
+
+		. At a minimum, you can include a link that would retrieve the response itself to a document where it came from. 
+
+		. If your response includes a page from page data, for instance, items 101 through 150 from a list of 1000, then links to retrieve the previous page, next page, first page, 		and last page can be helpful. 
+
+
+	* Finally, take a look at existing APIs that you find useful for implementation ideas. 
+
+		. The REST architecture is meant to result in a generalizable interface that's not tied to specific resources. So existing implementations can offer insight and ideas for 		approaches to making your data available even if those implementations are in totally different fields from your own. 
+
+		. Implementing these best practices can get you started with your own API while supporting future iteration as your needs and the needs of your users change and grow.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
