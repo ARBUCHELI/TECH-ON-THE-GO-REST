@@ -150,6 +150,72 @@ While there may be a healthy back and forth on what to call these implementation
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+* Alternatives to REST
+----------------------
+REST is a really common API architecture on the web today, but it's certainly not the only one. 
+
+In fact, many different architectures are in use. 
+
+A few others are particularly common, though. 
+
+	. One of those is the Simple Object Access Protocol or SOAP. 
+
+		SOAP was created around the same time as REST, and initially, SOAP was much more popular on the web than REST. 
+
+		Unlike REST, which does not have a centralized standard, SOAP is a protocol that's an official recommendation of the Worldwide Web Consortium or the W3C. 
+
+		One of the biggest differences between SOAP and REST is that SOAP is built on extensible markup language, or XML, and requires XML as its data format. 
+
+		This means that SOAP doesn't have the flexibility of REST when it comes to content. 
+
+		In addition, content encoded as XML requires more data than the same content encoded in other common data formats like JSON or YAML, meaning that XML can take more 
+		bandwidth to transmit. 
+
+		This and other strict rules of SOAP bring benefits to using the protocol however. 	
+
+		Software that supports building and integrating SOAP APIs can offer help to developers in these tasks, because there are fewer choices left to the developer than in a 
+		REST API. 
+
+		SOAP also has error handling built in. 
+
+		In addition, while there may be more REST APIs on the web overall today, in the enterprise space, SOAP is commonly the standard, meaning that there's a large base of 		knowledge and user community in place. 
+
+
+	. Another more recent API architecture is GraphQL. While SOAP and REST share some structural commonalities, GraphQL represents a significantly different approach to structuring 
+	API endpoints. 
+
+		Instead of offering a set of static API endpoints with fixed data structures in the response, GraphQL enables an API request to specify exactly what data it wants, as 
+		well as how it wants that data structured. 
+
+		This means that GraphQL responses can avoid delivering unnecessary data and can provide related data in a single request, where REST or SOAP might require multiple 
+		requests to receive a complete set of related data. 
+
+		To harness the power of GraphQL requires understanding some of its complexities, so it's not as easy for a new user to work with as REST. 
+
+
+	. Yet another common API architecture is GRPC, which is based on a Google defined standard for remote procedure call. 
+
+		In GRPC, an API call executes a backend function and returns the result. 
+
+		he function call can include parameters and other information, much like a REST API call. 
+
+		GRPC is commonly used for simple calls to specific types of backend systems. 
+
+		Unlike REST in which the client and server parts of the application are separate, in a GRPC system, all aspects are custom coded to work together. 
+
+		This means that the code often isn't reusable. 
+
+
+	. One additional API architecture in common use today is an API based on REST, but leaving out one or more of the REST constraints. 
+
+		For instance, some APIs that consider themselves restful do not incorporate hypertext as the engine of application state. 
+
+		Adaptations of the REST architecture may meet an organization's API needs better than simply applying all of the constraints of REST, at the cost of a lack of 
+		predictability by deviating from a known structure.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
